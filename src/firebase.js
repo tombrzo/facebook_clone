@@ -7,5 +7,3 @@ const firebaseConfig = {
   appId: "1:647155992594:web:4b3ffa6e7dbf2edab430cb",
   measurementId: "G-20SL9C6077"
 };
-
-// databaseURL: 'https://facebook-clone-da2ac.firebaseio.com',

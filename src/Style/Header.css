@@ -27,7 +27,7 @@
   border-radius: 999px;
 }
 
-.header__input > input {
+.header__input>input {
   border: none;
   background-color: transparent;
   outline-width: 0;
@@ -39,15 +39,16 @@
   justify-content: center;
 }
 
-.header__option >.MuiSvgIcon-root {
+.header__option>.MuiSvgIcon-root {
   color: gray;
 }
-.header__option:hover >.MuiSvgIcon-root {
+
+.header__option:hover>.MuiSvgIcon-root {
   color: #2e81f4;
 }
 
-.header__option_active >.MuiSvgIcon-root {
-  color:#2e81f4
+.header__option_active>.MuiSvgIcon-root {
+  color: #2e81f4
 }
 
 .header__option_active {
@@ -78,10 +79,10 @@
   align-items: center;
 }
 
-.header__info > h4 {
+.header__info>h4 {
   margin-left: 10px;
 }
 
-.header__right:hover > Button{
-  background:none;
+.header__right:hover>Button {
+  background: none;
 }
