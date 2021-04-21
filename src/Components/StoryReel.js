@@ -33,6 +33,6 @@ const StoryReel = () => {
       />
     </div>
   );
-}
+};
 
 export default StoryReel;

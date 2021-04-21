@@ -13,6 +13,6 @@ const SidebarRow = ({ src, Icon, title }) => {
 
     </div>
   );
-}
+};
 
 export default SidebarRow;

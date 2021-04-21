@@ -1,5 +1,3 @@
-import { ExpandMore, LocalHospital } from '@material-ui/icons';
-import userEvent from '@testing-library/user-event';
 import React from 'react';
 import '../Style/Sidebar.css';
 import SidebarRow from '../Components/SidebarRow';
@@ -25,6 +23,6 @@ const Sidebar = () => {
       <SidebarRow Icon={ExpandMoreOutlinedIcon} title='Marketplace' />
     </div>
   );
-}
+};
 
 export default Sidebar;
