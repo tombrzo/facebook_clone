@@ -29,7 +29,7 @@
 }
 
 .messageSender__top > form > button {
-  display:block;
+  display: none;
 }
 
 .messageSender__input {
@@ -51,7 +51,7 @@
 .messageSender__option > h4 {
   font-size: medium;
   margin-left: 10px;
-  
+
 }
 
 .messageSender__option:hover {

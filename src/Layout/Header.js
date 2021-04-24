@@ -11,10 +11,14 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { useStateValue } from '../Components/StateProvider.js';
+
 
 function Header() {
-  return <div className='header'>
 
+  const [{ user }] = useStateValue();
+
+  return <div className='header'>
     <div className='header__left'>
       <img className='header__logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Facebook_circle_pictogram.svg/120px-Facebook_circle_pictogram.svg.png' alt='' />
 
@@ -23,7 +27,6 @@ function Header() {
         <input type='text' placeholder='Search Facebook' />
       </div>
     </div>
-
 
     <div className='header__center'>
       <div className='header__option header__option_active' >
@@ -45,8 +48,8 @@ function Header() {
 
     <div className='header__right'>
       <div className='header__info'>
-        <Avatar />
-        <h4>Tom</h4>
+        <Avatar src={user.photoURL} />
+        <h4>{user.displayName}</h4>
       </div>
 
       <IconButton >
@@ -65,7 +68,7 @@ function Header() {
       </IconButton>
     </div>
 
-  </div>
+  </div>;
 }
 
 export default Header;

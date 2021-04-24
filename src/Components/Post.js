@@ -15,7 +15,7 @@ const Post = ({ profilePic, image, username, timestamp, message }) => {
         <Avatar src={profilePic} className='post__avatar' />
         <div className='post__topInfo'>
           <h4>{username}</h4>
-          <p>{timestamp}</p>
+          <p>{new Date().toLocaleString()}</p>
         </div>
       </div>
 
@@ -44,12 +44,7 @@ const Post = ({ profilePic, image, username, timestamp, message }) => {
           <AccountCircleIcon />
           <ExpandMoreOutlined />
         </div>
-
       </div>
-
-
-
-
     </div>
   );
 };
