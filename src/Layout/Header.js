@@ -2,8 +2,9 @@ import React from 'react';
 import '../Style/Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
-import FlagIcon from '@material-ui/icons/Flag';
-import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
+import OndemandVideoSharpIcon from '@material-ui/icons/OndemandVideoSharp';
+import PeopleOutlineSharpIcon from '@material-ui/icons/PeopleOutlineSharp';
+// import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
 import StoreOutlinedIcon from '@material-ui/icons/StoreOutlined';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import { Avatar, IconButton } from '@material-ui/core';
@@ -20,7 +21,7 @@ function Header() {
 
   return <div className='header'>
     <div className='header__left'>
-      <img className='header__logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Facebook_circle_pictogram.svg/120px-Facebook_circle_pictogram.svg.png' alt='' />
+      <img className='header__logo' src='https://upload.wikimedia.org/wikipedia/commons/a/a7/Facebook_f_Logo_%28with_gradient%29.svg' alt=''/>
 
       <div className='header__input'>
         <SearchIcon />
@@ -33,10 +34,10 @@ function Header() {
         <HomeIcon fontSize='large' />
       </div>
       <div className='header__option'>
-        < FlagIcon fontSize='large' />
+        < PeopleOutlineSharpIcon fontSize='large' />
       </div>
       <div className='header__option'>
-        < SubscriptionsOutlinedIcon fontSize='large' />
+        < OndemandVideoSharpIcon fontSize='large' />
       </div>
       <div className='header__option'>
         < StoreOutlinedIcon fontSize='large' />

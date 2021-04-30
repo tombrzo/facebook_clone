@@ -9,7 +9,7 @@ const StoryReel = () => {
       <Story
         image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiVE3HlMNeptImHa3AIRTQBZ0Oqt6op8Wmg&usqp=CAU'
         profileSrc={pic9}
-        title='Tom Brzoza'
+        title='Tomasz'
       />
       <Story
         image='https://www.insidescience.org/sites/default/files/2020-06/african-savannah_cropped.jpg'
