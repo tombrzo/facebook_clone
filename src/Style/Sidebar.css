@@ -1,4 +1,22 @@
 .sidebar {
-  padding: 25px 10px;
-  flex: 0.33;
+  min-width: 270px;
+  height: 560px;
+  padding: 15px 15px;
+  overflow-y: scroll;
+  position: sticky;
+  z-index: 100;
+  top: 55px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 50px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
 }
