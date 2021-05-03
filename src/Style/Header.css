@@ -1,0 +1,150 @@
+.header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__input {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__input>input {
+  padding-top: 7px;
+  padding-bottom: 9px;
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  font-size: 0.94rem;
+}
+
+.header__center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header__option>.MuiSvgIcon-root {
+  color: gray;
+  width: 30px;
+  height: 30px;
+}
+
+.header__option:hover>.MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header__option_active>.MuiSvgIcon-root {
+  color: #2e81f4
+}
+
+.header__option_active {
+  border-bottom: 3px solid #2e81f4;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  margin: 0 13px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__option[aria-label]:after {
+  opacity: 0;
+  content: attr(aria-label);
+  position: absolute;
+  top: 107%;
+  padding: 5px 10px;
+  z-index: 20;
+  background: #222;
+  color: white;
+  transition: 0.4s ease-in-out;
+  pointer-events: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.header__option[aria-label]:hover:after {
+  opacity: 0.8;
+  transition: 0.4s ease-in-out;
+}
+
+.header__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  border-bottom: none;
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info>p {
+  margin-left: 10px;
+}
+
+.header__right_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 7px 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__right_icon:hover {
+  background-color: #d3d5da;
+}
+
+.header__right_icon[aria-label]:after {
+  opacity: 0;
+  content: attr(aria-label);
+  position: absolute;
+  top: 107%;
+  padding: 5px 10px;
+  z-index: 20;
+  background: #222;
+  color: white;
+  transition: 0.4s ease-in-out;
+  pointer-events: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.header__right_icon[aria-label]:hover:after {
+  opacity: 0.8;
+  transition: 0.4s ease-in-out;
+}
