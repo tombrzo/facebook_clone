@@ -13,7 +13,6 @@ import { useStateValue } from '../Components/StateProvider.js';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import pic1 from '../images/pic1.png';
 
-
 function Header() {
 
   const [{ user }] = useStateValue();
@@ -51,24 +50,19 @@ function Header() {
         <Avatar src={user.photoURL} />
         <p>{user.displayName}</p>
       </div>
-
       <div className='header__right_icon' aria-label='Create'>
         <AddIcon />
       </div>
-
       <div className='header__right_icon' aria-label='Messenger'>
         <img src={pic1} alt='' width='25px' height='25px'/>
       </div>
-
       <div className='header__right_icon' aria-label='Notifications'>
         <NotificationsActiveIcon />
       </div>
-
       <div className='header__right_icon' aria-label='Account'>
         <ExpandMoreIcon />
       </div>
     </div>
-
   </div>;
 }
 

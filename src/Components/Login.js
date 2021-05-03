@@ -30,7 +30,6 @@ const Login = () => {
       </div>
 
       <Button type='submit' onClick={signIn}>Sign in</Button>
-
     </div>
   );
 };

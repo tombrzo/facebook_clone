@@ -22,31 +22,8 @@ function App() {
           </div>
         </>
       )}
-
     </div>
   );
 }
 
 export default App;
-
-
-// function App() {
-
-//   const [{ user }] = useStateValue();
-
-//   return (
-//     <div className='app'>
-//       {!user ? (<Login />) : (
-//         <>
-//           <Header />
-//           <div className='app__body'>
-//             <Sidebar />
-//             <Feed />
-//             <Widgets />
-//           </div>
-//         </>
-//       )}
-
-//     </div>
-//   );
-// }
