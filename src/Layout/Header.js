@@ -6,7 +6,7 @@ import OndemandVideoSharpIcon from '@material-ui/icons/OndemandVideoSharp';
 import PeopleOutlineSharpIcon from '@material-ui/icons/PeopleOutlineSharp';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
-import { Avatar} from '@material-ui/core';
+import {Avatar} from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
