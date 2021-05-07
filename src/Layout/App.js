@@ -1,9 +1,7 @@
 import '../Style/App.css';
-import Header from './Header.js';
-import Sidebar from './Sidebar.js';
-import Feed from './Feed.js';
-import Widgets from './Widgets.js';
+import Page from './Page.js';
 import Login from '../Components/Login.js';
+import {BrowserRouter as Router} from 'react-router-dom';
 import { useStateValue } from '../Components/StateProvider.js';
 
 function App() {
@@ -11,18 +9,13 @@ function App() {
   const [{ user }] = useStateValue();
 
   return (
-    <div className='app'>
+    <>
       {!user ? (<Login />) : (
-        <>
-          <Header />
-          <div className='app__body'>
-            <Sidebar />
-            <Feed />
-            <Widgets />
-          </div>
-        </>
+        <Router>
+          <Page/>
+        </Router>
       )}
-    </div>
+    </>
   );
 }
 
