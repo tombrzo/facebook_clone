@@ -1,8 +1,13 @@
 import React from 'react';
+import '../Style/UserActivity.css';
 
 const UserActivity = () => {
   return ( 
-    <p>czesc </p>
+    <div className='userActivity__wraper'>
+      <p>hello</p>
+      <p>hello</p>
+      <p>hello</p>
+    </div>
   );
 };
  

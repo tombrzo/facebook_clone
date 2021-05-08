@@ -50,7 +50,7 @@
   color: gray;
   width: 30px;
   height: 30px;
-} 
+}
 
 .header__option:hover>.MuiSvgIcon-root {
   color: #2e81f4;
@@ -100,13 +100,7 @@
 .header__info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-
-.header__info>p {
-  display: block;
-  margin-left: 10px;
-  color: red;
+  margin-right: 5px;
 }
 
 .header__right_icon {
@@ -159,6 +153,7 @@
 .navLink>.header__option>.MuiSvgIcon-root {
   color: gray;
 }
+
 .navLink:hover>.header__option>.MuiSvgIcon-root {
   color: #2e81f4;
 }
@@ -177,14 +172,27 @@
 
 .userNavLink {
   width: 140px;
+  height: 35px;
   text-decoration: none;
   color: #222;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
-  margin-right: 5px;
+  padding: 0 5px;
+  border-radius: 50px;
 }
 
+.userNavLink:hover {
+  background-color: #dbe2ee;
+}
 
+.header__info>.active {
+  background-color: #dbe2ee;
+  border: none;
+}
 
+.header__info>.active:hover {
+  background-color: #cad1dd;
+  border: none;
+}

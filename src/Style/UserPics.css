@@ -1,4 +1,4 @@
-.user__top_container {
+.user__container {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -26,12 +26,13 @@
     bottom: -15px;
     left: 50%;
     margin-left: -87px;
+    cursor: pointer;
 }
 
 .photo-camera {
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +41,7 @@
     z-index: 200;
     bottom: -5px;
     left: 53%;
+    cursor: pointer;
 }
 
 .user__backgroud-picture {
@@ -52,7 +54,7 @@
 .user__data_top {
     width: 880px;
     margin-bottom: 1px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
 }
 
 .user__name {

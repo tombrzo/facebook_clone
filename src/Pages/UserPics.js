@@ -9,25 +9,18 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 
-
-
-
 const UserPics = () => {
 
   const [{ user }] = useStateValue();
 
   return ( 
     <>
-      <div className='user__top_container'>
-
+      <div className='user__container'>
         <div className='user__pictures'>
           <img className='user__backgroud-picture' src={pic3} alt=''/>
           <img className='user-avatar' src={user.photoURL} alt='' />
           <div className='photo-camera'><PhotoCameraIcon fontSize='medium'/></div>
         </div>
-
-
-
         <div className='user__data_top'>
           <div className='user__name'>{user.displayName} </div>
           <div className='user__add-bio'> add a bio </div>
@@ -48,12 +41,7 @@ const UserPics = () => {
           </div>
         </div>
       </div>
-      <div className='user__top_container'>
-      
-      </div>
     </>
-
-
   );
 };
  

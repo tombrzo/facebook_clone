@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../Layout/Header.js';
-import Sidebar from '../Layout/Sidebar.js';
-import Feed from '../Layout/Feed.js';
-import Widgets from '../Layout/Widgets.js';
+import Sidebar from '../Components/Sidebar.js';
+import Feed from '../Components/Feed.js';
+import Widgets from '../Components/Widgets.js';
 
 
 const HomePage = () => {
