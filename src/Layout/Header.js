@@ -60,7 +60,7 @@ function Header() {
     <div className='header__right'>
       <div className='header__info'>
         <NavLink className='userNavLink' to='/user'>
-          <Avatar src={user.photoURL} style={{backgroundColor:'gray'}}/>
+          <Avatar src={user.photoURL} style={{backgroundColor:'lightgray'}}/>
           <p>{user.displayName}</p>
         </NavLink>
       </div>

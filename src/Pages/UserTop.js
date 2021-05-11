@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/UserPics.css';
+import '../Style/UserTop.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import pic3 from '../images/pic3.jpg';
@@ -18,7 +18,7 @@ const UserPics = () => {
       <div className='user__container'>
         <div className='user__pictures'>
           <img className='user__backgroud-picture' src={pic3} alt=''/>
-          <img className='user-avatar' src={user.photoURL} alt='' />
+          <img className='user-avatar' src={user.photoURL} alt='' style={{backgroundColor:'lightgray'}}/>
           <div className='photo-camera'><PhotoCameraIcon fontSize='medium'/></div>
         </div>
         <div className='user__data_top'>
@@ -35,8 +35,8 @@ const UserPics = () => {
           </div>
           <div className='user__data_bottom-right'>
             <div className='right-subject'><EditIcon style={{color:'#222222'}}/>Edit Profile</div>
-            <div className='right-subject'><VisibilityIcon style={{color:'#222222'}}/></div>
-            <div className='right-subject'><SearchIcon style={{color:'#222222'}}/></div>
+            <div className='right-subject' aria-label='display as'><VisibilityIcon style={{color:'#222222'}}/></div>
+            <div className='right-subject' aria-label='search in profile'><SearchIcon style={{color:'#222222'}}/></div>
             <div className='right-subject'><MoreHorizIcon style={{color:'#222222'}}/></div>
           </div>
         </div>

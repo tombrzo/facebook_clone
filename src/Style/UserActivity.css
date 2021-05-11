@@ -1,5 +1,6 @@
 .userActivity__wraper {
     width: 100%;
+    min-height: 2780px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +8,7 @@
 }
 
 .userActivity__element {
-    width: 880px;
+    width: 860px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0.5px 2px 0.4px #ddd;
@@ -32,12 +33,13 @@
     width: max-content;
     color: #222;
     margin: 0;
-    border: 3px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: 0.2s;
 }
 
 .title__header_content:hover {
     border-bottom: 3px solid #222;
+    cursor: pointer;
 }
 
 .title__sentense {
@@ -55,6 +57,7 @@
 }
 
 .title__dots-icon {
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,20 +122,18 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
-    cursor: pointer;
 }
 
 .content__pictures {
     position: relative;
-    min-width: 168px;
-    min-height: 180px;
-    padding: 2px;
+    margin: 3.5px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .content__pictures_photo {
-    width: 166px;
-    height: 168px;
+    width: 163px;
+    height: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,10 +162,6 @@
     margin: 0;
 }
 
-.content__pictures_title>p:hover {
-    border-bottom: 1px solid #222;
-}
-
 .content__pictures_subtitle {
     color: #222;
     font-size: 13px;
@@ -172,7 +169,11 @@
     border: 1px solid transparent;
 }
 
-.content__pictures_subtitle:hover {
+.content__pictures_title:hover>p {
+    border-bottom: 1px solid #222;
+}
+
+.content__pictures_title:hover>.content__pictures_subtitle {
     border-bottom: 1px solid #222;
 }
 
@@ -198,35 +199,50 @@
     opacity: 0.45;
 }
 
-.check-in__event {
+.event {
+    width: 43%;
+    position: relative;
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin-top: 35px;
+    border: 1px solid #F5F6F7;
 }
 
-.check-in__pics {
+.event_pics {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-.check-in__event_title {
+.event_title {
     flex-direction: column;
     margin-left: 20px;
 }
 
-.check-in__event_title>p {
+.event_title>p {
     font-size: 14px;
     color: gray;
     margin: 0;
+    cursor: pointer;
 }
 
-.check-in__event_title>h4 {
+.event_title>h4 {
+    width: fit-content;
     margin: 0;
     font-size: 17px;
     font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s;
+}
+
+.event_title>h4:hover {
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .films__event,
@@ -243,3 +259,139 @@
     color: gray;
     margin: 0;
 }
+
+.event_pop-text {
+    position: absolute;
+    top: 100%;
+    left: -15%;
+    opacity: 0;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 7px 1px rgb(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.pop-text__top {
+    display: flex;
+}
+
+.pop-text_pics {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pop-text__top-left {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.pop-text__top-left>h3 {
+    margin: 0;
+    border: 1px solid transparent;
+}
+
+.pop-text__top-left:hover>h3 {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.pop-text__top-left>p {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.pop-text__address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: grey;
+    font-size: 15px;
+}
+
+.pop-text__address>p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.pop-text__people {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: grey;
+    font-size: 15px;
+}
+
+.pop-text__people>p {
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.take-part__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.take-part {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #2e81f4;
+    background-color: #ECF3FF;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.take-part:hover {
+    background-color: #dbe2ee;
+    cursor: pointer;
+}
+
+.take-part>span{
+    margin-right: 10px;
+}
+
+.event_pics:hover~.event_pop-text {
+    opacity: 1;
+    top: 100%;
+    transition: 0.4s;
+}
+
+.event_title:hover~.event_pop-text {
+    opacity: 1;
+    top: 100%;
+    transition: 0.4s;
+}
+
+.event_pop-text:hover {
+    opacity: 1;
+    top: 100%;
+    transition: 0.3s;
+}
+
+.members {
+    display: flex;
+    margin: 10px 20px;
+}
+
+
+
+
+

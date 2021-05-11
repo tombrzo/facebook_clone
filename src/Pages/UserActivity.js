@@ -3,6 +3,11 @@ import '../Style/UserActivity.css';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import AddSharpIcon from '@material-ui/icons/AddSharp';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import { Avatar } from "@material-ui/core";
+import PublicIcon from '@material-ui/icons/Public';
+import InfoIcon from '@material-ui/icons/Info';
 import canary3 from '../images/canary3.jpg';
 import morocco from '../images/morocco.jpg';
 import slovakia from '../images/slovakia.jpg';
@@ -28,7 +33,6 @@ const UserActivity = () => {
           <p className='subtitle__sentense'>Your photos</p>
           <p className='subtitle__sentense subtitle__active'>Albums</p>
         </div>
-
         <div className='content'>
           <div className='content__pictures'>
             <div className='content__pictures_photo'><AddSharpIcon style={{fontSize:'40px'}}/></div>
@@ -39,7 +43,8 @@ const UserActivity = () => {
           <div className='content__pictures'>
             <div className='content_dots-icon'><MoreHorizIcon style={{color:'white'}}/></div>
             <img className='content__pictures_photo' src={canary3} alt=''/>
-            <div className='content__pictures_title'><p>Canary Islands</p>
+            <div className='content__pictures_title'>
+              <p>Canary Islands</p>
               <div className='content__pictures_subtitle'>23 elements</div>
             </div>
           </div>
@@ -98,11 +103,37 @@ const UserActivity = () => {
         <div className='subtitle'>
           <p className='subtitle__sentense subtitle__active'>Recently</p>
         </div>
-        <div className='check-in__event'>
-          <img className='check-in__pics' alt="" src="https://mediateka.ckzamek.pl/wp-content/uploads/2020/10/2013-EthnoPort1024_1.jpg"/>
-          <div className='check-in__event_title'>
+        <div className='event'>
+          <img className='event_pics' alt="" src="https://mediateka.ckzamek.pl/wp-content/uploads/2020/10/2013-EthnoPort1024_1.jpg"/>
+          <div className='event_title'>
             <h4>Ethno Port Poznan Festival 2013</h4>
             <p>Visited on 9th Jun 2013</p>
+          </div>
+
+          <div className='event_pop-text'>
+            <div className='pop-text__top'>
+              <img className='pop-text_pics' alt="" src="https://mediateka.ckzamek.pl/wp-content/uploads/2020/10/2013-EthnoPort1024_1.jpg"/>
+              <div className='pop-text__top-left'>
+                <p>Fri., 7th JUN 2013</p>
+                <h3>Ethno Port Poznan</h3>  
+                <h3>Festival 2013</h3>  
+                <div className='pop-text__address'>
+                  <InfoIcon style={{color:'gray'}}/>
+                  <p>7 June 2013 - Centrum Kultury ZAMEK in Poznan</p>
+                </div>
+                <div className='pop-text__people'>
+                  <SupervisedUserCircleIcon style={{color:'gray'}}/>
+                  <p>0 Friends, 1 Guest</p>
+                </div>
+              </div>
+            </div>
+            <div className='take-part__container'>
+              <div className='take-part'> 
+                <span>I will take a part</span>
+                <CheckCircleIcon />
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -224,10 +255,54 @@ const UserActivity = () => {
         </div>
       </div>
 
+      <div className='userActivity__element'>
+        <div className='title'>
+          <div className='title__header'>
+            <h3 className='title__header_content'>Groups</h3>
+          </div>
+          <div className='title__dots-icon'><MoreHorizIcon style={{color:'#222222'}}/></div>
+        </div>
+        <div className='subtitle'>
+          <p className='subtitle__sentense subtitle__active'>Public</p>
+        </div>
+        <div className='event'>
+          <img className='event_pics' alt="" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-0/p180x540/90505622_3215482428484729_7262147926342762496_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=825194&_nc_ohc=zkHzZMQqcyMAX-q3DYT&_nc_ht=scontent-waw1-1.xx&tp=6&oh=568c0251704c54df38af57369bd1c279&oe=60BC8BDA"/>
+          <div className='event_title'>
+            <h4>Positive Psychology</h4>
+            <p> Public group - 202K members</p>
+          </div>
+
+          <div className='event_pop-text'>
+            <div className='pop-text__top'>
+              <img className='pop-text_pics' alt="" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-0/p180x540/90505622_3215482428484729_7262147926342762496_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=825194&_nc_ohc=zkHzZMQqcyMAX-q3DYT&_nc_ht=scontent-waw1-1.xx&tp=6&oh=568c0251704c54df38af57369bd1c279&oe=60BC8BDA"/>
+              <div className='pop-text__top-left'>
+                <h3>Positive Psychology</h3>      
+                <div className='pop-text__address'>
+                  <PublicIcon style={{color:'gray'}}/>
+                  <p>Grupa publiczna</p>
+                </div>
+                <div className='pop-text__people'>
+                  <SupervisedUserCircleIcon style={{color:'gray'}}/>
+                  <p>203K Group members</p>
+                </div>
+                <div className='members'>
+                  <Avatar src='https://expertphotography.com/wp-content/uploads/2019/04/female-face-girl-wearing-hat-outdoors.jpg' />
+                  <Avatar src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkOtir47d-AOmUlxKrfVlsyn5IglOv0tM4g&usqp=CAU' />
+                  <Avatar src='https://i1.wp.com/novocom.top/image/aS5wabWcuYW5pbWcuY29t/736x/73/3a/0c/733a0cffcca8b3cec89cf9a66d401023--tribal-face-paints-tribal-paint.jpg' />
+                  <Avatar src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62YSKPAg37CSEqYXHgD1Wcnx47e3jngEcmA&usqp=CAU' />
+                  <Avatar src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUxEwV-zn9XNHrPRQfJSF0zTvoHQuv0ht6Q&usqp=CAU' />
+                </div>
+              </div>
+            </div>
+            <div className='take-part__container'>
+              <div className='take-part'>Visit a group</div>
+              <div className='title__dots-icon'><MoreHorizIcon style={{color:'#222222'}}/></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
  
 export default UserActivity;
-
-
