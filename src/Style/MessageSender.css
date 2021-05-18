@@ -1,5 +1,6 @@
 .messageSender {
-  width: 100%;
+  width: 620px;
+  max-width: 620px;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -51,7 +52,6 @@
 .messageSender__option > h4 {
   font-size: medium;
   margin-left: 10px;
-
 }
 
 .messageSender__option:hover {
