@@ -22,7 +22,8 @@
   color: #2e81f4;
 }
 
-.MuiAvatar-root.MuiAvatar-circle {
+.sidebarRow>.MuiAvatar-root.MuiAvatar-circle {
   width: 28px;
   height: 28px;
+  background-color:red;
 }
