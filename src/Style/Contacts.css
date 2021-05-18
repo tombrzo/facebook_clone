@@ -1,0 +1,154 @@
+.contacts {
+    max-width: 270px;
+    height: 86vh;
+    position: sticky;
+    top: 55px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 15px 15px;
+}
+
+.contacts__title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.title__name {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.title__icons {
+    display: flex;
+}
+
+.title__icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__icon:hover {
+    background-color: #DADDE1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.room[aria-label]::after {
+    position: absolute;
+    opacity: 0;
+    content: attr(aria-label);
+    top: 90%;
+    left: 92px;
+    z-index: 20;
+    transition: 0.4s ease-in-out;
+    background: #222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.search[aria-label]::after {
+    position: absolute;
+    opacity: 0;
+    content: attr(aria-label);
+    top: 90%;
+    left: 23px;
+    z-index: 20;
+    transition: 0.4s ease-in-out;
+    background: #222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.options[aria-label]::after {
+    position: absolute;
+    opacity: 0;
+    content: attr(aria-label);
+    top: 90%;
+    right: 0px;
+    z-index: 20;
+    transition: 0.4s ease-in-out;
+    background: #222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.title__icon[aria-label]:hover:after {
+    opacity: 0.8;
+    transition: 0.4s ease-in-out;
+}
+
+.contacts::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 50px;
+}
+
+.contacts:hover::-webkit-scrollbar-thumb {
+    background: #bcc0c4;
+}
+
+.separator {
+    width: 280px;
+    margin: 10px 0 10px 10px;
+    border-bottom: 1px solid #DADDE1;
+}
+
+.conversation__name {
+   margin: 15px 0 10px 0;
+   color: gray;
+   font-size: 18px;
+   font-weight: 500;
+}
+.create__group {
+    display: flex;
+    align-items: center;
+}
+
+.create__group:hover {
+    background-color: #DADDE1;
+    border-radius: 10px;
+}
+
+.create__add {
+   width: 28px;
+   height: 28px;
+   background-color: #bcc0c4;
+   border-radius: 50%;
+   font-size: 20px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 23px;
+   margin-left: 8px;
+}
+
+.create__group>p {
+   margin: 10px 0px 10px 15px;
+   font-weight: 500;
+}
+
+
+
+  
+
+
+
+

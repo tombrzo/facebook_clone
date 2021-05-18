@@ -8,6 +8,7 @@ import StorefrontIcon from '@material-ui/icons/Storefront';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import {Avatar} from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
+import AnnouncementOutlinedIcon from '@material-ui/icons/AnnouncementOutlined';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useStateValue } from '../Components/StateProvider.js';
@@ -77,6 +78,7 @@ function Header() {
         <ExpandMoreIcon />
       </div>
     </div>
+    <div className='messenger' aria-label='New message'><AnnouncementOutlinedIcon /></div>
   </div>;
 }
 

@@ -3,6 +3,7 @@
   height: 560px;
   padding: 15px 15px;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: sticky;
   z-index: 100;
   top: 55px;

@@ -8,7 +8,6 @@ import Watch from '../Pages/Watch.js';
 import Marketplace from '../Pages/Marketplace.js';
 import Groups from '../Pages/Groups.js';
 
-
 const Page = () => {
 
   return ( 
@@ -24,7 +23,6 @@ const Page = () => {
 
       </Switch>
     </>
-
   );
 };
  
