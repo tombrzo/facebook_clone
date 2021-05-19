@@ -1,5 +1,5 @@
 .contacts {
-    max-width: 270px;
+    min-width: 270px;
     height: 86vh;
     position: sticky;
     top: 55px;
@@ -93,25 +93,6 @@
     transition: 0.4s ease-in-out;
 }
 
-.contacts::-webkit-scrollbar {
-    width: 8px;
-}
-
-.contacts::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 50px;
-}
-
-.contacts:hover::-webkit-scrollbar-thumb {
-    background: #bcc0c4;
-}
-
-.separator {
-    width: 280px;
-    margin: 10px 0 10px 10px;
-    border-bottom: 1px solid #DADDE1;
-}
-
 .conversation__name {
    margin: 15px 0 10px 0;
    color: gray;
@@ -143,6 +124,19 @@
 .create__group>p {
    margin: 10px 0px 10px 15px;
    font-weight: 500;
+}
+
+.contacts::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 50px;
+}
+
+.contacts:hover::-webkit-scrollbar-thumb {
+    background: #bcc0c4;
 }
 
 

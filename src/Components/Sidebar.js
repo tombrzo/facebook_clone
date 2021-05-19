@@ -26,6 +26,21 @@ const Sidebar = () => {
       <SidebarRow src='https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/NYOGcd-z-qs.png' title='Offers' />
       <SidebarRow src='https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/3jfPQhTRYG8.png' title='Oculus' />
       <SidebarRow Icon={ExpandMoreOutlinedIcon} title='See more' />
+      <div className='separator'></div>
+      <div className='shortcuts'>
+        <h4 className='shortcust__title'>Your shortcuts</h4>
+        <div className='shortcuts__content'>
+          <img className='shortcuts__content_image' src='https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-0/p180x540/90505622_3215482428484729_7262147926342762496_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=825194&_nc_ohc=zkHzZMQqcyMAX-q3DYT&_nc_ht=scontent-waw1-1.xx&tp=6&oh=568c0251704c54df38af57369bd1c279&oe=60BC8BDA' alt=''/>
+          <p>Create a group</p>
+        </div>
+      </div>
+      <div className='rules'>
+        <p className='rules_type'>Privacy<span className='rules_dot'> . </span>Regulations<span className='rules_dot'> . </span>
+        Advertisement<span className='rules_dot'> . </span>Ad options<span className='rules_dot'> . </span>
+        Cookies<span className='rules_dot'> . </span>More<span className='rules_dot'> . </span>Facebook &copy; 2021</p>
+      </div>
+
+
     </div>
   );
 };
