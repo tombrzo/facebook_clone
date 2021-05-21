@@ -5,3 +5,10 @@
 .app__body {
   display:flex;
 }
+
+.separator {
+  width: 97%;
+  margin: 10px 0 10px 10px;
+  border-bottom: 1px solid #DADDE1;
+}
+

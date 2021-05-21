@@ -1,11 +1,64 @@
 .sidebar {
   min-width: 270px;
-  height: 560px;
-  padding: 15px 15px;
-  overflow-y: scroll;
+  height: 86vh;
   position: sticky;
-  z-index: 100;
+  padding: 15px 15px;
   top: 55px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.shortcust__title {
+  margin: 15px 0 10px 0;
+  color: grey;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.shortcuts__content {
+  display: flex;
+  align-items: center;
+}
+
+.shortcuts__content:hover {
+  background-color: #DADDE1;
+  border-radius: 10px;
+}
+
+.shortcuts__content_image {
+  width: 28px;
+  height: 28px;
+  background-color: #bcc0c4;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 23px;
+  margin-left: 8px;
+}
+
+.shortcuts__content>p {
+  margin: 10px 0px 10px 15px;
+  font-weight: 500;
+}
+
+.shortcuts__content_image {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.rules_type {
+  font-size: 13px;
+  color: gray;
+}
+
+.rules_dot {
+  color: gray;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .sidebar::-webkit-scrollbar {

@@ -8,9 +8,7 @@ import Watch from '../Pages/Watch.js';
 import Marketplace from '../Pages/Marketplace.js';
 import Groups from '../Pages/Groups.js';
 
-
 const Page = () => {
-
   return ( 
     <>
       <Switch>
@@ -20,11 +18,9 @@ const Page = () => {
         <Route path='/marketplace' component={Marketplace}/>
         <Route path='/groups' component={Groups}/> 
         <Route path='/user' component={User}/>
-        <Route                     component={ErrorPage}/>
-
+        <Route component={ErrorPage}/>
       </Switch>
     </>
-
   );
 };
  
