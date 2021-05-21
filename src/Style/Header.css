@@ -170,7 +170,7 @@
   color: #2e81f4;
 }
 
-.userNavLink {
+.user__NavLink {
   width: 140px;
   height: 39px;
   text-decoration: none;
@@ -183,11 +183,11 @@
   border-radius: 50px;
 }
 
-.userNavLink>p {
+.user__NavLink>p {
   margin-left: 7px;
 }
 
-.userNavLink:hover {
+.user__NavLink:hover {
   background-color: #dbe2ee;
 }
 

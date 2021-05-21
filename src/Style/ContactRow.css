@@ -1,26 +1,27 @@
-.contactRow {
+.contact__row {
     height: 45px;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.contactRow:hover {
+.contact__row:hover {
     background-color: lightgray;
     border-radius: 10px;
 }
 
-.contactRow>p {
+.contact__row>p {
     margin-left: 10px;
     font-weight: 600;
 }
 
-.contactRow>.MuiSvgIcon-root {
+.contact__row>.MuiSvgIcon-root {
     font-size: xx-large;
     color: #2e81f4;
 }
 
-.contactRow>.MuiAvatar-root.MuiAvatar-circle {
+.contact__row>.MuiAvatar-root.MuiAvatar-circle {
     width: 30px;
     height: 30px;
+    background-color:transparent;
 }
