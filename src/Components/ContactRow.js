@@ -4,8 +4,8 @@ import { Avatar } from '@material-ui/core';
 
 const ContactRow = ({ src, Icon, firstName, lastName }) => {
   return (
-    <div className='contactRow'>
-      { src && <Avatar src={src} style={{backgroundColor:'lightgray'}}/>}
+    <div className='contact__row'>
+      { src && <Avatar src={src} />}
       { Icon && <Icon/>}
       <p>{firstName}</p>
       <p>{lastName}</p>

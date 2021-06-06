@@ -35,9 +35,14 @@ const Sidebar = () => {
         </div>
       </div>
       <div className='rules'>
-        <p className='rules_type'>Privacy<span className='rules_dot'> . </span>Regulations<span className='rules_dot'> . </span>
-        Advertisement<span className='rules_dot'> . </span>Ad options<span className='rules_dot'> . </span>
-        Cookies<span className='rules_dot'> . </span>More<span className='rules_dot'> . </span>Facebook &copy; 2021</p>
+        <p className='rules_type'>Privacy<span className='rules_dot'> . </span>
+        Regulations<span className='rules_dot'> . </span>
+        Advertisement<span className='rules_dot'> . </span>
+        Ad options<span className='rules_dot'> . </span>
+        Cookies<span className='rules_dot'> . </span>
+        More<span className='rules_dot'> . </span>
+        Facebook &copy; 2021
+        </p>
       </div>
 
 
