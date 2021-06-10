@@ -4,4 +4,4 @@
 
 This project uses React Router and React Redux 
 
-### You cen see the website at: https://facebook-clone-da2ac.firebaseapp.com
+### You can see the website at: https://facebook-clone-da2ac.firebaseapp.com
